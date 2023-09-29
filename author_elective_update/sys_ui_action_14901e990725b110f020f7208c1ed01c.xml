@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name>assign me</action_name>
+        <active>false</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>assigned to me</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[var currentUserID = gs.getUserID;
+var incidentGr = new GlideRecord('incident');
+if (incidentGr.get(current.getValue('sys_id'))) {
+    incidentGr.setValue('assigned_to', currentUserID);
+    incidentGr.update();
+}
+]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-27 05:38:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>14901e990725b110f020f7208c1ed01c</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>assigned to me</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_ui_action_14901e990725b110f020f7208c1ed01c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-27 06:30:38</sys_updated_on>
+        <table>incident</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>88d8df13db0f1784ff27d5b0cf961995</instance_id>
+        <instance_name>dev63893</instance_name>
+        <name>sys_ui_action_14901e990725b110f020f7208c1ed01c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;assign me&lt;/action_name&gt;&lt;active&gt;false&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;true&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;assigned to me&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[var currentUserID = gs.getUserID;
+var incidentGr = new GlideRecord('incident');
+if (incidentGr.get(current.getValue('sys_id'))) {
+    incidentGr.setValue('assigned_to', currentUserID);
+    incidentGr.update();
+}
+]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-09-27 05:38:33&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;14901e990725b110f020f7208c1ed01c&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;assigned to me&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_14901e990725b110f020f7208c1ed01c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-09-27 06:30:38&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;true&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-527241835</payload_hash>
+        <record_name>assigned to me</record_name>
+        <reverted_from/>
+        <source>6b4d8e550725b110f020f7208c1ed066</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-27 06:30:38</sys_created_on>
+        <sys_id>cf5d1ed50765b110f020f7208c1ed088</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ad55518540000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-27 06:30:38</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>875d1ed54565b110e24535e07616d488</update_guid>
+        <update_guid_history>875d1ed54565b110e24535e07616d488:-527241835,aa2b12951d65b11070fbdf9fb5ace56e:-930801862,06ba5ad1db65b110ccf1d70852f04928:-2101107121,5f8a9ed10465b110ea30f9c3f8838758:-624164926,e36aded16d65b110399e71c771ada317:-1997800383,fcf812d1b965b110d857929f79ff4aca:295032993,b7a856d1a065b110d8237e7458281019:148099340,5a885e911265b110a3d9d7d484c6bba2:-2140302442,57681a5d1625b1106462ac1c32914547:-906435316,17e7d25db525b1100aed6eb27ee17c1e:-8990546,8b45de9d2425b110ded6aca0e9a28a02:-1622063121,a7f2925dd725b1103b014ae94ddc6100:756634834,3182de1dfa25b1102ef8de7edfed5d04:1356766501,5b021ed91425b110bc71dd872adb9272:661909001,76e1ded94225b110201582276e6136bb:-2053951206,f271da998825b110fa8e768b16f49185:-310168003,847156993f25b110951289fa848b1244:2004627505</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-27 06:33:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>01693d13d301427280076ed476dcbfe4</sys_id>
+        <sys_metadata>14901e990725b110f020f7208c1ed01c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>assigned to me</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="Incident">978fcdd19d8321107fa3a4a5988b1ecd</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_ui_action_14901e990725b110f020f7208c1ed01c</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_14901e990725b110f020f7208c1ed01c">cf5d1ed50765b110f020f7208c1ed088</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-27 06:33:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

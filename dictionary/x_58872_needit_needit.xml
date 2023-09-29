@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="3ab6348a07613110f020f7208c1ed0d4" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Legal" label="Request type" mandatory="true" max_length="40" name="u_choice_2" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resource" sequence="0" value="HR"/>
+                <element inactive_on_update="false" label="Facility" sequence="1" value="Facility"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="Legal"/>
+                <element inactive_on_update="false" label="Your Department Choice" sequence="3" value="your_choice"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Legal 1" label="What needed" mandatory="true" max_length="40" name="u_choice_3" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Human Resource 1" sequence="0" value="HR 1"/>
+                <element inactive_on_update="false" label="Human Resource 2" sequence="1" value="HR 2"/>
+                <element inactive_on_update="false" label="Facilities 1" sequence="2" value="Facilities 1"/>
+                <element inactive_on_update="false" label="Facilities 2" sequence="3" value="Facilities 2"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="4" value="Legal 1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="5" value="Legal 2"/>
+                <element inactive_on_update="false" label="Your Department Choice 1" sequence="6" value="Your Choice 1"/>
+                <element inactive_on_update="false" label="Your Department Choice 2" sequence="7" value="Your Choice 2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_glide_date_time_4" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="Request for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+    </element>
+</database>
